@@ -1,0 +1,113 @@
+.contact{
+    margin-top: 5rem;
+}
+
+.contact .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row .contact-info-container {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .row .contact-info-container .box {
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact .row .contact-info-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 1.7rem;
+    background: #44bb6a;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.contact .row .contact-info-container .box h3 {
+    font-size: 2rem;
+    color: #263238;
+    padding-bottom: 1rem;
+}
+
+.contact .row .contact-info-container .box p {
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 2;
+}
+
+.contact .row .contact-info-container .share {
+    padding-top: 1rem;
+}
+
+.contact .row .contact-info-container .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: #263238;
+    color: #fff;
+    margin-right: .1rem;
+    text-align: center;
+}
+
+.contact .row .contact-info-container .share a:hover {
+    background: #44bb6a;
+}
+
+.contact .row form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+}
+
+.contact .row form .inputBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input {
+    width: 49%;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    padding: 1.4rem;
+    background: #f6f6f6;
+    text-transform: none;
+    color: #777;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: 0.1rem solid #999;
+}
+
+.contact .row form textarea {
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+
+@media (max-width: 450px) {
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+}

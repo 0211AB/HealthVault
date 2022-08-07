@@ -1,0 +1,51 @@
+.home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home .image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content {
+    width: 45rem;
+}
+
+.home .content span {
+    color: #44bb6a;
+    font-size: 2rem;
+}
+
+.home .content h3 {
+    color: #263238;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.home .content h3 a {
+    color: #44bb6a;
+}
+
+.home .content h3 a:hover {
+    text-decoration: underline;
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    color: #777;
+    padding-bottom: 1rem;
+    line-height: 2;
+}

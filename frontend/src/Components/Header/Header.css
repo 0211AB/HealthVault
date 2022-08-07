@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #44bb6a;
+    width: 30rem;
+    height: 100%;
+    padding: 3rem;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .logo i {
+    color: #ff0;
+}
+
+.header .navbar {
+    padding: 20% 0;
+}
+
+.header .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 5rem 0;
+    color: #fff;
+}
+
+/* .header .navbar a i {
+    color: #ff0;
+    padding-right: .5rem;
+} */
+
+.header .navbar a:hover {
+    color: #ff0;
+}
+
+.header .navbar a:hover i {
+    padding-right: 2rem;
+}
+
+#menu-btn {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    background: #44bb6a;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10000;
+    display: none;
+}
+
+#menu-btn.fa-times {
+    background: #fff;
+    color: #263238;
+}
+
+.logoHt{
+    height:2rem;
+    width:2rem;
+}

@@ -1,0 +1,44 @@
+.category .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+  gap: 2rem;
+}
+
+.category .box-container .box {
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  border: 0.1rem solid #44bb6a;
+}
+
+.category .box-container .box:hover i {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.heading img{
+  height:25rem;
+}
+
+.category .box-container .box i {
+  height: 5.5rem;
+  width: 5.5rem;
+  line-height: 5.5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  color: #fff;
+  background: #44bb6a;
+  margin-bottom: 1.5rem;
+}
+
+.category .box-container .box h3 {
+  font-size: 2rem;
+  color: #263238;
+}
+
+.category .box-container .box p {
+  font-size: 1.4rem;
+  color: #777;
+  line-height: 2;
+}

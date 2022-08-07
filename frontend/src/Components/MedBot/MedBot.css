@@ -1,0 +1,28 @@
+.med-sec{
+    height:90vh;
+    margin:10rem 0;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+iframe{
+    height:78vh;
+    width:75vw;
+}
+
+.centered{
+    text-align: center;
+    font-size:3rem;
+    margin-bottom: 1rem;;
+}
+@media (max-width: 650px) {
+    iframe{
+        width:100%;
+        overflow-x: scroll;
+    }
+}

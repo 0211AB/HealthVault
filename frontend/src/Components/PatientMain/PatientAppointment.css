@@ -1,0 +1,83 @@
+.reviews .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.reviews .box-container .box {
+  text-align: center;
+  padding: 3rem;
+  background: #fff;
+  border: 0.1rem solid #999;
+}
+
+.reviews .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.reviews .box-container .box h3 {
+  font-size: 2rem;
+  color: #263238;
+}
+
+.reviews .box-container .box p {
+  line-height: 2;
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.reviews .box-container .box .stars i {
+  font-size: 1.7rem;
+  color: #44bb6a;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top:10rem;
+}
+
+.about .image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  width: 45rem;
+}
+
+.about .content span {
+  font-size: 2rem;
+  color: #44bb6a;
+}
+
+.about .content h3 {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  color: #263238;
+}
+
+.about .content p {
+  padding: 1.5rem 0;
+  line-height: 2;
+  font-size: 1.4rem;
+  color: #777;
+}

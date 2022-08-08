@@ -64,10 +64,10 @@ exports.getPostPrescription = async (req, res) => {
     .populate("doctor", "name email")
     .sort("-createdAt")
     .then((data) => {
-      res.json({ data });
+      res.status(200).json({ data });
     })
     .catch((err) => {
       console.log(err);
-      res.json(err);
+      res.status(400).json(err);
     });
 };

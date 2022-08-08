@@ -29,10 +29,14 @@ const DoctorPatientHistory = () => {
         },
       });
 
-      const resD = await res.json();
-      console.log(resD);
-      setRData(resD);
-      setLoading(false);
+      if (res.status === 400) {
+        alert("No such patient found");
+      } else {
+        const resD = await res.json();
+        console.log(resD);
+        setRData(resD);
+        setLoading(false);
+      }
     };
 
     if (data !== null) fetchData();

@@ -39,6 +39,7 @@ const PatientHistory = () => {
     const fetchData = async () => {
       const res = await fetch(
         `http://localhost:8000/prescription/${data.aadharNumber}`,
+
         {
           method: "GET",
           headers: {

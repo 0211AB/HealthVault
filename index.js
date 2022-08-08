@@ -35,6 +35,16 @@ app.use(prescriptionRoutes);
 app.use(appRoutes);
 app.use(imageRoutes);
 
+if (
+  process.env.NODE_ENV === "production" ||
+  process.env.NODE_ENV === "staging"
+) {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  });
+}
+
 app.listen(port, () => {
   console.log("App is running on port", port);
 });

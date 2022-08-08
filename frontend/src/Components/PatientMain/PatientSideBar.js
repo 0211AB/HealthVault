@@ -22,7 +22,6 @@ const PatientSideBar = () => {
           Authorization: `Bearer :${authCtx.token}`,
         },
       });
-
       if (res.status === 200) {
         authCtx.logout();
         navigate("/");

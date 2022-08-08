@@ -15,7 +15,7 @@ const PatientInfo = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`http://localhost:8000/patient/profile`,
+            const res = await fetch(`http://localhost:8000/api/patient/profile`,
                 {
                     method: 'GET',
                     headers: {
@@ -36,7 +36,7 @@ const PatientInfo = () => {
     useEffect(() => {
         //setLoading(true)
         const fetchImage = async () => {
-            const res = await fetch(`http://localhost:8000/getimage/${data.photo}`,
+            const res = await fetch(`http://localhost:8000/api/getimage/${data.photo}`,
                 {
                     method: 'GET'
                 })

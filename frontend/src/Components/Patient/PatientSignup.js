@@ -25,7 +25,7 @@ const PatientSignup = () => {
             formData = new FormData(document.getElementById('form'))
             formData.append('image', data);
             // console.log(formData)
-            const res = await fetch('http://localhost:8000/patient/signup',
+            const res = await fetch('http://localhost:8000/api/patient/signup',
                 {
                     method: 'POST',
                     body: formData

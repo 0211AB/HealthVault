@@ -20,7 +20,7 @@ const DoctorAppointment = () => {
   useEffect(() => {
     setLoading(true)
     const sendData = async () => {
-      const res = await fetch('http://localhost:8000/appointments/doctor',
+      const res = await fetch('http://localhost:8000/api/appointments/doctor',
         {
           method: 'GET',
           headers: {

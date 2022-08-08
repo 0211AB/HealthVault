@@ -23,7 +23,7 @@ const DoctorLogin = () => {
     useEffect(() => {
         setLoading(true)
         const sendData = async () => {
-            const res = await fetch('http://localhost:8000/doctor/login',
+            const res = await fetch('http://localhost:8000/api/doctor/login',
                 {
                     method: 'POST',
                     body: JSON.stringify(data),

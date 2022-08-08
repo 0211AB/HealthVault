@@ -16,7 +16,7 @@ const PatientSideBar = () => {
     useEffect(() => {
 
         const logoutF = async () => {
-            const res = await fetch(`http://localhost:8000/patient/logout`,
+            const res = await fetch(`http://localhost:8000/api/patient/logout`,
                 {
                     method: 'GET',
                     headers: {

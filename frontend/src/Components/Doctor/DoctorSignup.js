@@ -27,7 +27,7 @@ const DoctorLogin = () => {
             formData = new FormData(document.getElementById('form'))
             formData.append('image', data);
             // console.log(formData)
-            const res = await fetch('http://localhost:8000/doctor/signup',
+            const res = await fetch('http://localhost:8000/api/doctor/signup',
                 {
                     method: 'POST',
                     body: formData

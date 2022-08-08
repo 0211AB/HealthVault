@@ -40,13 +40,13 @@ const storage = new GridFsStorage({
 
 const upload = multer({ storage });
 
-router.post("/patient/signup", upload.single("image"), controller.signupPatient);
+router.post("/api/patient/signup", upload.single("image"), controller.signupPatient);
 
-router.post("/patient/login", controller.loginPatient);
+router.post("/api/patient/login", controller.loginPatient);
 
-router.put("/patient/update/:uid", auth, upload.single("image"), controller.updatePatient);
+router.put("/api/patient/update/:uid", auth, upload.single("image"), controller.updatePatient);
 
-router.get("/patient/profile", auth, controller.patientProfile)
+router.get("/api/patient/profile", auth, controller.patientProfile)
 
 router.get('/patient/logout', auth, controller.logoutPatient)
 

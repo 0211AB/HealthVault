@@ -21,7 +21,7 @@ const PatientAppointment = () => {
   useEffect(() => {
     setLoading(true)
     const sendData = async () => {
-      const res = await fetch('http://localhost:8000/appointments/patient',
+      const res = await fetch('http://localhost:8000/api/appointments/patient',
         {
           method: 'GET',
           headers: {
@@ -48,7 +48,7 @@ const PatientAppointment = () => {
     setLoading(true)
     const sendData = async () => {
       // console.log(data)
-      const res = await fetch('http://localhost:8000/appointment/create',
+      const res = await fetch('http://localhost:8000/api/appointment/create',
         {
           method: 'POST',
           body: JSON.stringify(data),

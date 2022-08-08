@@ -21,7 +21,7 @@ const PatientLogin = () => {
 
     useEffect(() => {
         const sendData = async () => {
-            const res = await fetch('http://localhost:8000/patient/login',
+            const res = await fetch('http://localhost:8000/api/patient/login',
                 {
                     method: 'POST',
                     body: JSON.stringify(data),

@@ -26,7 +26,7 @@ const DoctorUpdate = () => {
       formData = new FormData(document.getElementById('form'))
       formData.append('image', fdata);
 
-      const res = await fetch(`http://localhost:8000/doctor/update/${data.registrationNumber}`,
+      const res = await fetch(`http://localhost:8000/api/doctor/update/${data.registrationNumber}`,
         {
           method: 'PUT',
           body: formData,
@@ -57,7 +57,7 @@ const DoctorUpdate = () => {
   useEffect(() => {
     setLoading(true)
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/doctor/profile`,
+      const res = await fetch(`http://localhost:8000/api/doctor/profile`,
         {
           method: 'GET',
           headers: {

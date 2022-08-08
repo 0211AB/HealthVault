@@ -20,7 +20,7 @@ const DoctorPatientHistory = () => {
   useEffect(() => {
     setLoading(true)
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/prescription`,
+      const res = await fetch(`http://localhost:8000/api/prescription`,
         {
           method: 'POST',
           body: JSON.stringify(data),

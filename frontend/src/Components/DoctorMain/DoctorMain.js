@@ -1,11 +1,11 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom';
-import DoctorSideBar from './DoctorSideBar';
-import DoctorInfo from './DoctorInfo'
-import DoctorAppointment from './DoctorAppointment'
-import DoctorUpdate from './DoctorUpdate'
-import DoctorPatientHistory from './DoctorPatientHistory'
-import DoctorCreatePrescription from './DoctorCreatePrescription';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import DoctorSideBar from "./DoctorSideBar";
+import DoctorInfo from "./DoctorInfo";
+import DoctorAppointment from "./DoctorAppointment";
+import DoctorUpdate from "./DoctorUpdate";
+import DoctorPatientHistory from "./DoctorPatientHistory";
+import DoctorCreatePrescription from "./DoctorCreatePrescription";
 
 const PatientMain = (props) => {
   const { state } = useLocation();
@@ -18,7 +18,7 @@ const PatientMain = (props) => {
       {props.val == 3 ? <DoctorAppointment /> : <></>}
       {props.val == 4 ? <DoctorCreatePrescription /> : <></>}
     </>
-  )
-}
+  );
+};
 
-export default PatientMain
+export default PatientMain;

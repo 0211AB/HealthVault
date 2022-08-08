@@ -1,16 +1,15 @@
-
 exports.getImage = async (req, res) => {
-    try {
-        gfs.find({ filename: req.params.id }).toArray((err, files) => {
-            if (!files[0] || files.length == 0)
-                return res.status(400).json({ Error: "No files found" })
+  try {
+    gfs.find({ filename: req.params.id }).toArray((err, files) => {
+      if (!files[0] || files.length == 0)
+        return res.status(400).json({ Error: "No files found" });
 
-            gfs.openDownloadStreamByName(req.params.id).pipe(res)
-        })
-    } catch (e) {
-        // console.log(e);
-        return res.status(404).json(e)
-    }
+      gfs.openDownloadStreamByName(req.params.id).pipe(res);
+    });
+  } catch (e) {
+    // console.log(e);
+    return res.status(404).json(e);
+  }
 };
 
 // const fid = req.params.id

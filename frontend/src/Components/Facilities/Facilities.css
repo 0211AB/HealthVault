@@ -1,28 +1,27 @@
-.fac-sec{
-    height:90vh;
-    margin:2.5rem 0;
+.fac-sec {
+  height: 90vh;
+  margin: 2.5rem 0;
 }
 
-
-.searchBox{
-    height:5rem;
+.searchBox {
+  height: 5rem;
 }
 
-.searchBox input{
-    padding:0 2rem;
-    height:4rem;
-    width:50rem;
-    border: 1px solid black;
+.searchBox input {
+  padding: 0 2rem;
+  height: 4rem;
+  width: 50rem;
+  border: 1px solid black;
 }
 
 @media (max-width: 500px) {
-    .searchBox input{
-        width:40rem;
-    } 
+  .searchBox input {
+    width: 40rem;
+  }
 }
 
 @media (max-width: 400px) {
-    .searchBox input{
-        width:35rem;
-    } 
+  .searchBox input {
+    width: 35rem;
+  }
 }

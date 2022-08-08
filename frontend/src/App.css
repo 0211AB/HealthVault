@@ -1,114 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
-    width: 1rem;
+  width: 1rem;
 }
 
 html::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #44bb6a;
+  background: #44bb6a;
 }
 
 body {
-    padding-left: 30rem;
+  padding-left: 30rem;
 }
 
 section {
-    padding: 3rem 5%;
+  padding: 3rem 5%;
 }
 
 section:nth-child(even) {
-    background: #f6f6f6;
+  background: #f6f6f6;
 }
 
 .heading {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .heading span {
-    font-size: 2rem;
-    color: #44bb6a;
-    text-transform: uppercase;
+  font-size: 2rem;
+  color: #44bb6a;
+  text-transform: uppercase;
 }
 
 .heading h3 {
-    padding-top: 1rem;
-    font-size: 3rem;
-    color: #263238;
-    text-transform: uppercase;
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #263238;
+  text-transform: uppercase;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1.2rem 3rem;
-    cursor: pointer;
-    color: #fff;
-    background: #263238;
-    font-size: 1.7rem;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+  color: #fff;
+  background: #263238;
+  font-size: 1.7rem;
 }
 
 .btn:hover {
-    background: #44bb6a;
+  background: #44bb6a;
 }
 
 @media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+  html {
+    font-size: 55%;
+  }
 }
 
 @media (max-width: 991px) {
-    body {
-        padding-left: 0;
-    }
+  body {
+    padding-left: 0;
+  }
 
-    #menu-btn {
-        display: block;
-    }
+  #menu-btn {
+    display: block;
+  }
 
-    .header {
-        left: -110%;
-    }
+  .header {
+    left: -110%;
+  }
 
-    .header.active {
-        left: 0;
-        -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-        width: 30rem;
-    }
+  .header.active {
+    left: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    width: 30rem;
+  }
 
-    .home .content h3 {
-        font-size: 2.5rem;
-    }
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 }

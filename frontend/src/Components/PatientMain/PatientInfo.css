@@ -1,8 +1,8 @@
 .category .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+  -ms-grid-columns: (minmax(30rem, 2fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
   gap: 2rem;
 }
 
@@ -14,11 +14,11 @@
 
 .category .box-container .box:hover i {
   -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  transform: translateY(-1rem);
 }
 
-.heading img{
-  height:25rem;
+.heading img {
+  height: 25rem;
 }
 
 .category .box-container .box i {
@@ -26,7 +26,7 @@
   width: 5.5rem;
   line-height: 5.5rem;
   font-size: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: #fff;
   background: #44bb6a;
   margin-bottom: 1.5rem;

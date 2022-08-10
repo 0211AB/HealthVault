@@ -123,6 +123,7 @@ const DoctorLogin = () => {
             <input
               type="file"
               placeholder="Upload profile picture"
+              accept="image/bmp, image/jpeg, image/png"
               name="image"
               required
             />

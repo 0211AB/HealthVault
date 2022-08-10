@@ -62,7 +62,7 @@ const DoctorUpdate = () => {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/doctor/profile`, {
+      const res = await fetch(`/doctor/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

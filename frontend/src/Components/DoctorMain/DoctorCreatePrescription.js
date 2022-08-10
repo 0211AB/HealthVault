@@ -4,7 +4,6 @@ import AuthContext from "../../Store/auth-context";
 import Loader from "../Loader/Loader";
 import createp from "../../Images/createprescription.gif";
 import { useState, useContext, useEffect } from "react";
-import { json } from "body-parser";
 
 const DoctorCreatePrescription = () => {
   const navigate = useNavigate();

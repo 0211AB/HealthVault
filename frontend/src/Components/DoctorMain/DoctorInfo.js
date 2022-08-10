@@ -14,7 +14,7 @@ const DoctorInfo = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/doctor/profile`, {
+      const res = await fetch(`/doctor/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const DoctorInfo = () => {
   useEffect(() => {
     //setLoading(true)
     const fetchImage = async () => {
-      const res = await fetch(`http://localhost:8000/getimage/${data.photo}`, {
+      const res = await fetch(`/getimage/${data.photo}`, {
         method: "GET",
       });
 

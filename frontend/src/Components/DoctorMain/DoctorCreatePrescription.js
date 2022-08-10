@@ -21,7 +21,7 @@ const DoctorCreatePrescription = () => {
     const sendData = async () => {
       // console.log(formData)
       
-      const res = await fetch("http://localhost:8000/prescription/create", {
+      const res = await fetch("/prescription/create", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

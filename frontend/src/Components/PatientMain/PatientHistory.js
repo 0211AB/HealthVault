@@ -17,7 +17,7 @@ const PatientHistory = () => {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/patient/profile`, {
+      const res = await fetch(`/patient/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const PatientHistory = () => {
     setLoading(true);
     const fetchData = async () => {
       const res = await fetch(
-        `http://localhost:8000/prescription/${data.aadharNumber}`,
+        `/prescription/${data.aadharNumber}`,
 
         {
           method: "GET",

@@ -15,7 +15,7 @@ const DoctorSideBar = () => {
 
   useEffect(() => {
     const logoutF = async () => {
-      const res = await fetch(`http://localhost:8000/doctor/logout`, {
+      const res = await fetch(`/doctor/logout`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

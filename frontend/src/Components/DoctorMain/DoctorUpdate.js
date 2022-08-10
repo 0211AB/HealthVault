@@ -33,7 +33,7 @@ const DoctorUpdate = () => {
       formData.append("image", fdata);
 
       const res = await fetch(
-        `http://localhost:8000/doctor/update/${data.registrationNumber}`,
+        `/doctor/update/${data.registrationNumber}`,
         {
           method: "PUT",
           body: formData,

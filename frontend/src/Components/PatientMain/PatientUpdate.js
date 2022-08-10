@@ -34,7 +34,7 @@ const PatientUpdate = () => {
       formData.append("image", fdata);
       console.log(formData);
       const res = await fetch(
-        `http://localhost:8000/patient/update/${data.aadharNumber}`,
+        `/patient/update/${data.aadharNumber}`,
         {
           method: "PUT",
           body: formData,
@@ -65,7 +65,7 @@ const PatientUpdate = () => {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:8000/patient/profile`, {
+      const res = await fetch(`/patient/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

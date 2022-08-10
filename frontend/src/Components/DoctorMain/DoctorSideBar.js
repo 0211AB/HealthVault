@@ -56,7 +56,7 @@ const DoctorSideBar = () => {
       </div>
 
       <header className={navClasses}>
-        <Link to="/" className="logo">
+        <Link to={`/doctor/${isOpen}`} className="logo">
           <GiHealthNormal className="logoHt"></GiHealthNormal> HealthVault
         </Link>
 

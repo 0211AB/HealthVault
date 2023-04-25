@@ -1,0 +1,26 @@
+.fac-sec {
+  padding: 2.5rem 0;
+  background-color: #f5f7fb;;
+}
+
+#map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .fac-sec {
+    padding: 1rem 0;
+  }
+
+  .searchBox input {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchBox input {
+    width: 35rem;
+  }
+}

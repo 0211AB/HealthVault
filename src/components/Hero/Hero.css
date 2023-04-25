@@ -1,0 +1,114 @@
+#hero {
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    margin-top: auto;
+}
+
+.hero-img {
+    display: flex;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    color: #122853;
+    line-height: 3.6rem;
+}
+
+.hero-text p {
+    color: #535353;
+    margin: 15px 0px;
+    max-width: 500px;
+    letter-spacing: 0.3px;
+    line-height: 1.8rem;
+}
+
+.hero-text-btns {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.hero-text-btns a,
+.hero-text-btns button {
+    height: 45px;
+    padding: 0px 15px;
+    background-color: #122853;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+@media(max-width:1050px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .hero-text {
+        margin-bottom: 40px;
+        background-color: #fff;
+        padding: 30px;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:620px) {
+    .hero-text {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .hero-text-btns {
+        flex-direction: column;
+    }
+
+    .hero-text-btns a {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .appointment-search {
+        grid-template-columns: 1fr !important;
+    }
+
+    .appointment-search button {
+        height: 45px
+    }
+}

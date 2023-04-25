@@ -1,0 +1,11 @@
+#appointment-icon{
+    height:30px;
+    width:30px;
+    padding:1px;
+    margin-left: 15px;
+}
+
+.app-box{
+    align-items: center;
+    justify-content: center;
+}

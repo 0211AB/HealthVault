@@ -1,0 +1,36 @@
+.med-sec {
+    height: 90vh;
+}
+
+#bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+iframe {
+    height: 75vh;
+    width: 75vw;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.centered {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 950px) {
+    .med-sec {
+        height: auto;
+    }
+
+    iframe {
+        margin: 10px;
+        width: 95%;
+        /* overflow-x: scroll; */
+    }
+}

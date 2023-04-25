@@ -1,0 +1,71 @@
+.p-data-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 7rem
+}
+
+.p-data-box input {
+    height: 3rem;
+    text-align: center;
+    border: 2px solid #174dac;
+    border-radius: 4px;
+}
+
+.pdf-box{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px
+}
+
+.pdf-button{
+    padding:10px;
+    height: 3rem;
+    width:100%;
+    text-align: center;
+    outline: 2px solid #174dac;
+    outline-offset: -4px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.p-data-box button {
+    height: 3rem;
+}
+
+.css-1u2cvaz {
+    padding: 20px !important;
+}
+
+.authenticate-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin:5px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.authenticate-form input{
+    width:80%;
+    padding:5px;
+    text-align: center;
+}
+
+@media (max-width:675px){
+    .pdf-box{
+        width:80%;
+    }
+}
+
+@media (max-width:450px){
+    .pdf-box{
+        width:100%;
+    }
+}
